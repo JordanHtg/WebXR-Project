@@ -159,6 +159,9 @@ renderer.setAnimationLoop(() => {
     raycaster.setFromCamera(mouse, camera);
     const hits = raycaster.intersectObjects(objects);
 
+    // --- FITUR KURSOR POINTER SAAT HOVER ---
+    document.body.style.cursor = hits.length > 0 ? 'pointer' : 'default';
+
     if (hovered && hovered !== selected) {
         hovered.material.emissive.setHex(0x000000); 
         hovered = null;
