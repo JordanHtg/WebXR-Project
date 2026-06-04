@@ -74,9 +74,9 @@ const textureLoader = new THREE.TextureLoader();
 // Data Objek: Nama, Info Detail, dan URL/Nama File Tekstur
 const objectData = [
     { name: 'Kotak Kayu', info: 'Merupakan kotak kargo standar untuk penyimpanan barang.', texture: 'https://threejs.org/examples/textures/crate.gif', color: 0xffffff },
-    { name: 'Bola Besi', info: 'Merupakan benda konstruksi berbentuk bola dan berbahan besi.', texture: 'besi.jpg', color: 0xffffff },
+    { name: 'Bola Besi', info: 'Merupakan benda konstruksi berbentuk bola dan berbahan besi putih.', texture: 'besi.jpg', color: 0xffffff },
     { name: 'Silinder Besi', info: 'Material berbahan besi padat yang biasa dipakai di konstruksi.', texture: 'besi.jpg', color: 0xffffff },
-    { name: 'Ring Besi', info: 'Ring dalam konstruksi bangunan dengan struktur besi.', texture: 'besi.jpg', color: 0xffffff },
+    { name: 'Ring Besi', info: 'Ring dalam konstruksi bangunan dengan struktur besi yang berkarat.', texture: 'besi-berkarat.jpg', color: 0xffffff },
     { name: 'Kerucut', info: 'Bangun ruang geometris dasar tanpa tekstur tambahan.', texture: null, color: 0x5BA8C9 }
 ];
 
