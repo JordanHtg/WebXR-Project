@@ -74,9 +74,9 @@ const textureLoader = new THREE.TextureLoader();
 // Data Objek: Nama, Info Detail, dan URL/Nama File Tekstur
 const objectData = [
     { name: 'Kotak Kayu', info: 'Merupakan kotak kargo standar untuk penyimpanan barang.', texture: 'https://threejs.org/examples/textures/crate.gif', color: 0xffffff },
-    { name: 'Bola Kaki', info: 'Merupakan benda yang digunakan dalam permainan sepak bola.', texture: 'bola.jpg', color: 0xffffff },
+    { name: 'Bola Besi', info: 'Merupakan benda konstruksi berbentuk bola dan berbahan besi.', texture: 'besi.jpg', color: 0xffffff },
     { name: 'Silinder Besi', info: 'Material berbahan besi padat yang biasa dipakai di konstruksi.', texture: 'besi.jpg', color: 0xffffff },
-    { name: 'Torus Roti', info: 'Cemilan berbentuk seperti donat manis bertekstur lembut.', texture: 'roti.jpg', color: 0xffffff },
+    { name: 'Ring Besi', info: 'Ring dalam konstruksi bangunan dengan struktur besi.', texture: 'besi.jpg', color: 0xffffff },
     { name: 'Kerucut', info: 'Bangun ruang geometris dasar tanpa tekstur tambahan.', texture: null, color: 0x5BA8C9 }
 ];
 
@@ -123,7 +123,7 @@ controls.minDistance = 3;
 controls.maxDistance = 20;
 controls.maxPolarAngle = Math.PI / 2;
 
-// --- SYARAT: Raycasting (2 Interaksi) ---
+//Raycasting (2 Interaksi) ---
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2(-100, -100); 
 const infoDiv = document.getElementById('info');
@@ -171,7 +171,6 @@ renderer.setAnimationLoop(() => {
         const object = hits[0].object;
         if (object !== selected) {
             hovered = object;
-            // Glow saat hover disesuaikan agar cocok dengan tema
             hovered.material.emissive.setHex(0x333333); 
         }
     }
