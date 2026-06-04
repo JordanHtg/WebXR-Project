@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+    <meta charset="utf-8">
+    <title>Three.js Deep Dive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+            background:#1C1F26
+        }
+        canvas {
+            display: block;
+        }
+        #info {
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            pointer-events: none;
+        }
+        #vrBtn {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 12px 28px;
+            border: none;
+            background: #F5A623;
+            color: #1C1F26;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+    </style>
+</head><body>
+    <div id="info">Klik Object untuk memilih</div>
+    <button id="vrBtn">Masuk VR</button>
+    <canvas id = "c"></canvas>
+
+<!-- Type = "Module" wajib untuk ES import-->
+<script type="module" src="app.js"></script>
+</html>
